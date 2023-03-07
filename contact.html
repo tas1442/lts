@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="contact page">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" href="img/favicon.ico" type="favicon/x-image">
+        <title>Contact hours</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__h1">The Little Taco Shop</h1>
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#menu">Our Menu</a></li>
+                    <li><a href="/hours.html">Store Hours</a></li>
+                    <li><a href="about.html"> About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article class="hero">
+            <figure>
+              <img src="img/tacos_close_up_400x260.png" alt="Tacos tray" title="tacos in a tray" width="auto" height="200px">
+             <figcaption class="offscreen">Tacos on a tray</figcaption>
+            </figure>
+            </article>
+        <main class="main">
+
+            <article class="main__article">
+                <h2>Address</h2>
+                <address>
+                    555 Taco Temptation Lane, Suite T<br>
+                    Kansas City, MO 55555-5555
+                    <br>
+                    <br>
+                    Phone no.:<a href="+55555-5555">+55555-5555</a>
+                </address>
+                </article>
+                
+            <article class="main__article contact">
+                <h2 class="contact__h2">Contact form</h2>
+                <form class="contact__form" action="https://httpbin.org/get" method="get">
+                <fieldset class="contact__fieldset">
+                  <legend class="offscreen">Send us a message</legend>
+                     <p class="contact__p"> 
+                         <label class="contact__label" for="firstName">First Name</label>
+                         <input type="text" name="firstName" id="firstName" placeholder="Jane" required autofocus>
+                     </p>
+                      <p class="contact__p">
+                         <label class="contact__label" for="EmailId">Email Id</label>
+                         <input class="contact__input" type="text" name="EmailId" id="EmailId" placeholder="ADC@adc.com" required autofocus>
+                      </p>
+                       <p class="contact__p">
+                         <label class="contact__label" for="phone">Phone no.</label>
+                         <input class="contact__input" type="tel" name="phone" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required autofocus>
+                       </p>
+                       <p class="contact__p">
+                          <label class="contact__label" for="taco">Favourite taco</label>
+                          <input type="text" name="taco" id="taco" list="taco-list" placeholder="chicken taco">
+                          <datalist id="taco-list" >
+                          <option value="chicken taco">
+                          <option value="veg taco">
+                          <option value="special taco" selected>
+                          <option value="chilli taco">
+                          <option value="beef taco">
+                          <option value="mill taco">
+                          </datalist>
+                       </p>
+                       <label class="contact__label" for="message">send us a message</label>
+                       <textarea class="contact__textarea" name="message" id="message" cols="20" rows="5" placeholder="Type your message here"></textarea>
+            </fieldset>
+            <br>
+            <button class="contact__button" type="submit">Submit</button>
+            <button class="contact__button" type="reset">Reset</button>
+            </form>
+        </article>
+            
+            <br>
+            <hr>
+            <a href="#">Back to top</a>
+        </main>
+        <footer class="footer">
+            <span class="nowrap"><p>Copyright &copy; </span>
+            <span class="nowrap">Little taco shop</p></span>
+            </footer>
+    </body>
+</html>
